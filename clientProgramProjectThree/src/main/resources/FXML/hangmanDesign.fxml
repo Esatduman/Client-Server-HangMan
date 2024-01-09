@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gameScreenController" styleClass="pane">
+   <children>
+      <HBox fx:id="a_to_q" layoutX="14.0" layoutY="278.0" prefHeight="66.0" prefWidth="587.0" spacing="6.0">
+         <children>
+            <Button fx:id="bA" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="A" />
+            <Button fx:id="bB" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="B" />
+            <Button fx:id="bC" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="C" />
+            <Button fx:id="bD" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="D" />
+            <Button fx:id="bE" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="E" />
+            <Button fx:id="bF" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="F" />
+            <Button fx:id="bG" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="G" />
+            <Button fx:id="bH" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="H" />
+            <Button fx:id="bI" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="I" />
+            <Button fx:id="bJ" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="J" />
+            <Button fx:id="bK" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="K" />
+            <Button fx:id="bL" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="L" />
+            <Button fx:id="bM" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="M" />
+            <Button fx:id="bN" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="N" />
+            <Button fx:id="bO" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="O" />
+            <Button fx:id="bP" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="P" />
+            <Button fx:id="bQ" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="Q" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox fx:id="r_to_z" layoutX="150.0" layoutY="335.0" prefHeight="50.0" prefWidth="307.0" spacing="6.0">
+         <children>
+            <Button fx:id="bR" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="R" />
+            <Button fx:id="bS" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="S" />
+            <Button fx:id="bT" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="T" />
+            <Button fx:id="bU" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="U" />
+            <Button fx:id="bV" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="V" />
+            <Button fx:id="bW" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="W" />
+            <Button fx:id="bX" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="X" />
+            <Button fx:id="bY" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="Y" />
+            <Button fx:id="bZ" mnemonicParsing="false" onAction="#alphabetButtonsHandler" prefHeight="25.0" prefWidth="28.0" text="Z" />
+         </children>
+      </HBox>
+      <Line fx:id="baseLine" endX="300.0" layoutX="300.0" layoutY="261.0" startX="-300.0" strokeWidth="3.0" />
+      <Line fx:id="vertLine" endX="-39.499969482421875" endY="-56.99998474121094" layoutX="324.0" layoutY="201.0" startX="-39.499969482421875" startY="58.5" strokeWidth="3.0" />
+      <Line fx:id="horizontalLine" endX="-60.833343505859375" endY="1.52587890625E-5" layoutX="386.0" layoutY="143.0" startX="-100.0" startY="0.5000152587890625" strokeWidth="3.0" />
+      <Line fx:id="hanger" endX="-80.12625122070312" endY="-19.292861938476562" layoutX="406.0" layoutY="163.0" startX="-80.12625122070312" startY="-5.6666717529296875" strokeWidth="3.0" />
+      <Button layoutX="511.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitGame" text="Disconnect" />
+      <Circle fx:id="head" layoutX="327.0" layoutY="169.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line fx:id="body" endX="-73.99996948242188" endY="-25.999984741210938" layoutX="401.0" layoutY="213.0" startX="-73.99996948242188" startY="11.666671752929688" strokeWidth="4.0" />
+      <Line fx:id="rightHand" endX="-39.499969482421875" endY="106.00001525878906" layoutX="384.0" layoutY="96.0" startX="-54.999969482421875" startY="89.00001525878906" strokeWidth="4.0" />
+      <Line fx:id="leftHand" endX="118.00003051757812" endY="66.00001525878906" layoutX="207.0" layoutY="121.0" startX="103.50003051757812" startY="84.33332824707031" strokeWidth="4.0" />
+      <Line fx:id="leftLeg" endX="69.00003051757812" endY="-8.333328247070312" layoutX="258.0" layoutY="235.0" startX="56.500030517578125" startY="7.6666717529296875" strokeWidth="4.0" />
+      <Line fx:id="rightLeg" endX="61.000030517578125" endY="-18.333328247070312" layoutX="268.0" layoutY="245.0" startX="73.83334350585938" startY="-2.9999847412109375" strokeWidth="4.0" />
+      <Button fx:id="suburbs" layoutX="15.0" layoutY="71.0" mnemonicParsing="false" onAction="#chicagoSuburbsButton" text="Chicago Suburbs" />
+      <Button fx:id="progLangs" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" onAction="#programmingLangButton" text="Programming Languages" />
+      <Button fx:id="profs" layoutX="15.0" layoutY="104.0" mnemonicParsing="false" onAction="#uicCSProfsButton" text="UIC CS Prof's" />
+      <Text layoutX="15.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categories : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="correct" disable="false" editable="false" layoutX="167.0" layoutY="81.0" prefHeight="30.0" prefWidth="286.0" text="Correct Guesses : ">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="length" disable="false" editable="false" layoutX="13.0" layoutY="170.0" text="Length of Word : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="guess" disable="false" editable="false" layoutX="13.0" layoutY="200.0" prefHeight="30.0" prefWidth="173.0" text="Remaining Guesses : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="correctOrNot" disable="false" editable="false" layoutX="399.0" layoutY="170.0" text="Select a Category">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="restart" disable="true" layoutX="511.0" layoutY="52.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="25.0" prefWidth="74.0" text="Restart" visible="false" />
+   </children>
+</Pane>

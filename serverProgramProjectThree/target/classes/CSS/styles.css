@@ -1,0 +1,15 @@
+.button{
+	-fx-font-weight: bold;
+}
+
+.border-pane{
+	-fx-background-color: lightgreen;
+}
+
+.pane{
+	-fx-background-color: lightgreen;
+}
+
+.scene{
+	-fx-background-color: lightgreen;
+}

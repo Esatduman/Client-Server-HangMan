@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" styleClass="border-pane" fx:controller="serverStartController" fx:id="pane" prefHeight="400.0" prefWidth="500.0">
+    <padding>
+        <Insets top="70.0" right="70.0" bottom="70.0" left="70.0"/>
+    </padding>
+    
+    <center>
+        <ListView fx:id="listItems"/>
+    </center>
+    
+</BorderPane>
